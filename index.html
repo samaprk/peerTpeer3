@@ -1,0 +1,15 @@
+ <html>
+  <head>
+    <script>
+      let HOST = location.origin.replace(/^http/, 'ws')
+      let ws = new WebSocket(HOST);
+      let el;
+      ws.onopen = (event) => {
+        console.log("helloworld");
+      };
+    </script>
+  </head>
+  <body>
+    <p id="server-time"></p>
+  </body>
+</html>
